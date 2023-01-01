@@ -1,11 +1,7 @@
 x <- seq(from = 0, to = 10, length=20)
-
-
 y <- exp(-x)
 plot(x,y)
 lines(x,y)
-
-
 
 target <- function(x){
   if (x < 0) {

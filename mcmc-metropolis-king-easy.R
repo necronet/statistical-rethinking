@@ -1,4 +1,4 @@
-num_weeks <-  1e5
+num_weeks <-  1e6
 position <- rep(0, num_weeks)
 current <- 10
 for (i in 1:num_weeks) {
@@ -10,4 +10,6 @@ for (i in 1:num_weeks) {
   prob_move <- proposal/current
   current <- ifelse(runif(1) < prob_move, proposal, current)
 }
+
 plot(table(position))
+
